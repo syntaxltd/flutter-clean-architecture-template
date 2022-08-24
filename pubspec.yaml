@@ -1,0 +1,30 @@
+name: flutter_clean_architecture
+description: A new Flutter application.
+homepage: https://github.com/syntaxltd/flutter-clean-architecture
+
+publish_to: 'none'
+
+version: 0.0.0
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  core:
+    path: core
+  presentation:
+    path: presentation
+  cupertino_icons: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/placeholder_image.jpeg

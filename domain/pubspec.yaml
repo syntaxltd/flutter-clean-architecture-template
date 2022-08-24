@@ -1,0 +1,25 @@
+name: domain
+description: A new Flutter package.
+version: 0.0.0
+homepage: https://github.com/syntaxltd/flutter-clean-architecture
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  get_it: ^7.2.0
+  injectable: ^1.5.3
+  freezed:
+  dio: ^4.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.2.0
+  injectable_generator:
+  freezed_annotation:
+
+flutter:

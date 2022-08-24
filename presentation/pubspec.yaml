@@ -1,0 +1,31 @@
+name: presentation
+description: A new Flutter package.
+version: 0.0.0
+homepage: https://github.com/syntaxltd/flutter-clean-architecture-template
+publish_to: none
+
+environment:
+  sdk: ">=2.16.2 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  core:
+    path: ../core
+  data:
+    path: ../data
+  domain:
+    path: ../domain
+  get_it: ^7.2.0
+  injectable: ^1.5.3
+  auto_route: ^3.2.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.2.0
+  injectable_generator:
+  auto_route_generator: ^3.2.3
+
+flutter:
