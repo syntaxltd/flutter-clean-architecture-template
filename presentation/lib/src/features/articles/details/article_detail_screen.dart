@@ -34,7 +34,7 @@ class ArticleDetailScreen extends CoreScreen<ArticleDetailViewModel> {
             ),
             Padding(
               padding: EdgeInsets.all(20),
-              child: Text(viewModel.articleModel.title, style: TextStyle(fontSize: 22, color: Theme.of(context).accentColor)),
+              child: Text(viewModel.articleModel.title, style: TextStyle(fontSize: 22, color: Theme.of(context).primaryColor)),
             ),
             Padding(padding: EdgeInsets.fromLTRB(20, 0, 20, 20), child: Text(viewModel.articleModel.description, style: TextStyle(fontSize: 20))),
             Padding(
@@ -45,7 +45,7 @@ class ArticleDetailScreen extends CoreScreen<ArticleDetailViewModel> {
               padding: EdgeInsets.all(20),
               child: TextButton(
                 onPressed: () => {},
-                child: Text(AppStrings.readFullStory, style: TextStyle(fontSize: 16, color: Theme.of(context).accentColor), textAlign: TextAlign.end),
+                child: Text(AppStrings.readFullStory, style: TextStyle(fontSize: 16, color: Theme.of(context).primaryColor), textAlign: TextAlign.end),
               ),
             ),
           ],
