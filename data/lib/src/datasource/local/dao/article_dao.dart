@@ -1,10 +1,10 @@
 import 'package:data/src/datasource/local/db/app_database.dart';
 import 'package:data/src/datasource/local/entity/article_entity.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
 
 part 'article_dao.g.dart';
 
-@UseDao(tables: <Type>[Articles])
+@DriftAccessor(tables: <Type>[Articles])
 class ArticleDao extends DatabaseAccessor<AppDatabase> with _$ArticleDaoMixin {
   final AppDatabase appDb;
 

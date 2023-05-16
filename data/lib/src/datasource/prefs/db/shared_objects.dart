@@ -16,10 +16,6 @@ class CachedSharedPreferences {
 
   static Future<CachedSharedPreferences?> getInstance() async {
     sharedPreferences = await SharedPreferences.getInstance();
-    // if (sharedPreferences.getBool(Constants.firstRun) == null || sharedPreferences.get(Constants.firstRun)) {
-    // if first run, then set these values
-//      await sharedPreferences.setBool(Constants.firstRun, false);
-//     }
     for (String key in cachedKeyList) {
       map[key] = sharedPreferences.get(key);
     }

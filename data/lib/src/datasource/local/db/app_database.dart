@@ -2,8 +2,8 @@ import 'dart:io';
 
 import 'package:data/src/datasource/local/dao/article_dao.dart';
 import 'package:data/src/datasource/local/entity/article_entity.dart';
-import 'package:moor/ffi.dart';
-import 'package:moor/moor.dart';
+import 'package:drift/drift.dart';
+import 'package:drift/native.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 
@@ -18,11 +18,11 @@ LazyDatabase openConnection() {
 
     final dbFile = File(p.join(dbFolder.path, 'db.sqlite'));
 
-    return VmDatabase(dbFile);
+    return NativeDatabase.createInBackground(dbFile);
   });
 }
 
-@UseMoor(tables: <Type>[Articles], daos: <Type>[ArticleDao])
+@DriftDatabase(tables: <Type>[Articles], daos: <Type>[ArticleDao])
 class AppDatabase extends _$AppDatabase {
   AppDatabase(QueryExecutor e) : super(e);
 
