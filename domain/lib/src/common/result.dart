@@ -17,7 +17,7 @@ class Error<T> extends Result<T> {
   Error(this.type, this.error);
 }
 
-abstract class SealedResult<T> {
+mixin SealedResult<T> {
   R? when<R>({R Function(T)? success, R Function(NetworkExceptions, String)? error}) {
     if (this is Success<T>) {
       return success?.call(((this as Success).data));
