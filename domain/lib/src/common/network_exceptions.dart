@@ -57,16 +57,18 @@ class NetworkExceptions with _$NetworkExceptions {
             case DioErrorType.sendTimeout:
               networkExceptions = NetworkExceptions.sendTimeout();
               break;
-            case DioErrorType.connectTimeout:
+            case DioErrorType.badCertificate:
+            case DioErrorType.connectionError:
+            case DioErrorType.connectionTimeout:
               networkExceptions = NetworkExceptions.requestTimeout();
-              break;
-            case DioErrorType.other:
-              networkExceptions = NetworkExceptions.noInternetConnection();
               break;
             case DioErrorType.receiveTimeout:
               networkExceptions = NetworkExceptions.sendTimeout();
               break;
-            case DioErrorType.response:
+            case DioErrorType.unknown:
+              networkExceptions = NetworkExceptions.noInternetConnection();
+              break;
+            case DioErrorType.badResponse:
               switch (error.response?.statusCode) {
                 case 400:
                   networkExceptions = NetworkExceptions.unauthorisedRequest((error.response!.data as Map)['message']);

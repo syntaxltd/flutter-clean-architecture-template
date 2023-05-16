@@ -4,22 +4,22 @@ version: 0.0.0
 homepage: https://github.com/syntaxltd/flutter-clean-architecture
 
 environment:
-  sdk: ">=2.16.2 <3.0.0"
-  flutter: ">=1.17.0"
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.3.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  get_it: ^7.2.0
-  injectable: ^1.5.3
-  freezed:
-  dio: ^4.0.6
+  get_it: ^7.6.0
+  injectable: ^2.1.1
+  freezed: ^2.3.4
+  dio: ^5.1.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  build_runner: ^2.2.0
-  injectable_generator:
-  freezed_annotation:
+  build_runner: ^2.4.2
+  injectable_generator: ^2.1.5
+  freezed_annotation: ^2.2.0
 
 flutter:
