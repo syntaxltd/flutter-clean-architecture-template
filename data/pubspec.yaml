@@ -1,7 +1,7 @@
 name: data
 description: A new Flutter package.
 version: 0.0.1
-homepage: https://github.com/syntaxltd/flutter-clean-architecture
+homepage: https://github.com/Dennis-Mwea/flutter-clean-architecture
 publish_to: none
 
 environment:
