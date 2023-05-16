@@ -1,3 +1,4 @@
+import 'package:auto_route/annotations.dart';
 import 'package:core/core/core_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:presentation/src/common/constants/app_strings.dart';
@@ -5,10 +6,11 @@ import 'package:presentation/src/common/constants/assets.dart';
 import 'package:presentation/src/di/locator.dart';
 import 'package:presentation/src/features/articles/details/article_detail_view_model.dart';
 
+@RoutePage()
 class ArticleDetailScreen extends CoreScreen<ArticleDetailViewModel> {
   final int id;
 
-  ArticleDetailScreen({required this.id});
+  const ArticleDetailScreen({required this.id});
 
   @override
   Widget builder(BuildContext context, ArticleDetailViewModel viewModel, Widget? child) {

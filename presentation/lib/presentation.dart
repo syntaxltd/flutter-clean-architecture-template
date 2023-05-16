@@ -19,5 +19,5 @@ class Presentation {
   /// Returns router information for features
   /// This information will be used by core module (in main app)
   /// to setup router
-  static RootStackRouter getFeatureRouter() => FeatureRouter();
+  static RootStackRouter getFeatureRouter() => AppRouter();
 }

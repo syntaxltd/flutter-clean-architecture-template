@@ -32,6 +32,6 @@ class ArticleListViewModel extends CoreViewModel {
   }
 
   void onArticleItemClicked(int id) {
-    navigationService.push(ArticleDetailScreenRoute(id: id));
+    navigationService.push(ArticleDetailRoute(id: id));
   }
 }

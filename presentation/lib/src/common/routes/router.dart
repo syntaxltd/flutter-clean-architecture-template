@@ -1,13 +1,14 @@
-import 'package:auto_route/annotations.dart';
-import 'package:presentation/src/features/articles/details/article_detail_screen.dart';
-import 'package:presentation/src/features/articles/list/article_list_screen.dart';
-import 'package:presentation/src/features/login/login_screen.dart';
+import 'package:auto_route/auto_route.dart';
+import 'package:presentation/src/common/routes/router.gr.dart';
 
 export 'router.gr.dart';
 
-@MaterialAutoRouter(routes: <AutoRoute>[
-  AutoRoute(page: LoginScreen, initial: true),
-  AutoRoute(page: ArticleListScreen),
-  AutoRoute(page: ArticleDetailScreen)
-])
-class $FeatureRouter {}
+@AutoRouterConfig()
+class AppRouter extends $AppRouter {
+  @override
+  List<AutoRoute> get routes => <AutoRoute>[
+    AutoRoute(page: LoginRoute.page, path: '/'),
+    AutoRoute(page: ArticleListRoute.page),
+    AutoRoute(page: ArticleDetailRoute.page),
+  ];
+}

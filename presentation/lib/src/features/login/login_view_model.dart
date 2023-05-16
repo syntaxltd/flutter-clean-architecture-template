@@ -7,6 +7,6 @@ import 'package:presentation/src/common/routes/router.dart';
 class LoginViewModel extends CoreViewModel {
 
   void onLoginButtonPressed() {
-    navigationService.push(ArticleListScreenRoute());
+    navigationService.push(ArticleListRoute());
   }
 }
