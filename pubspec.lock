@@ -318,13 +318,22 @@ packages:
     source: hosted
     version: "1.1.1"
   macos_ui:
+    dependency: "direct overridden"
+    description:
+      path: "."
+      ref: dev
+      resolved-ref: ef51bfe6dabce1277e21aaf6cb4c7ff61d2040a7
+      url: "https://github.com/Mayb3Nots/macos_ui.git"
+    source: git
+    version: "2.1.0-beta.1"
+  macos_window_utils:
     dependency: transitive
     description:
-      name: macos_ui
-      sha256: "57208eec8180656acd379e1c754e9b6d8830f32a020b94571ae2188f8112075b"
+      name: macos_window_utils
+      sha256: "510de576b5432dd9ef9e4c258abcc021c6dfbb17a78a344688848a6784b352b8"
       url: "https://pub.dev"
     source: hosted
-    version: "1.12.2"
+    version: "1.1.2"
   matcher:
     dependency: transitive
     description:
@@ -691,4 +700,4 @@ packages:
     version: "3.1.2"
 sdks:
   dart: ">=3.0.0 <4.0.0"
-  flutter: ">=3.4.0-17.0.pre"
+  flutter: ">=3.7.0"
