@@ -1,13 +1,13 @@
 name: flutter_clean_architecture
 description: A new Flutter application.
-homepage: https://github.com/syntaxltd/flutter-clean-architecture
+homepage: https://github.com/Dennis-Mwea/flutter-clean-architecture
 
 publish_to: 'none'
 
 version: 0.0.0
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
