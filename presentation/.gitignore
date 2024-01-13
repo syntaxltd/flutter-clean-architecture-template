@@ -75,3 +75,5 @@ build/
 
 lib/src/di/locator.config.dart
 lib/src/common/routes/router.gr.dart
+
+.fvm/flutter_sdk

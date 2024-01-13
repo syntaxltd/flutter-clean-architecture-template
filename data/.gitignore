@@ -78,3 +78,5 @@ lib/src/datasource/remote/service/*.g.dart
 lib/src/datasource/remote/dto/*.g.dart
 lib/src/datasource/local/db/*.g.dart
 lib/src/datasource/local/dao/*.g.dart
+
+.fvm/flutter_sdk
